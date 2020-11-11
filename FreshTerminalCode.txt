@@ -1,0 +1,41 @@
+> var city = "Dallas";
+> var temprature = 103.4f;
+> var currentDt = DateTime.Now;
+> string.Format("Hey there, welcome to {0}, the time is {1}, and the temprature is {2}", city, currentDt, temprature);
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. var c = string.Format("Hey there, welcome to {0}, the time is {1}, and the temprature is {2}", city, currentDt, temprature);
+> c
+"Hey there, welcome to Dallas, the time is 11/6/2020 4:42:42 AM, and the temprature is 103.4"
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. var c = string.Format("Hey there, welcome to {0}, the time is {1:t}, and the temprature is {2}", city, currentDt, temprature);
+> c
+"Hey there, welcome to Dallas, the time is 4:44 AM, and the temprature is 103.4"
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. var c = string.Format("Hey there, welcome to {0}, the time is {1:T}, and the temprature is {2}", city, currentDt, temprature);
+> c
+"Hey there, welcome to Dallas, the time is 4:44:38 AM, and the temprature is 103.4"
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. var c = string.Format("Hey there, welcome to {0}, the time is {1:T}, and the temprature is {2: 0.00}", city, currentDt, temprature);
+> c
+"Hey there, welcome to Dallas, the time is 4:46:21 AM, and the temprature is  103.40"
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. var
+.     
+.      c = string.Format("Hey there, welcome to {0}, the time is {1:T}, and the temprature is {2: 0.00}", city, currentDt, temprature);
+> var city = "Dallas";
+. var temprature = 1111.423f;
+. var currentDt = DateTime.Now;
+. var c = string.Format("Hey there, welcome to {0}, the time is {1:T}, and the temprature is {2: 0,0.000}", city, currentDt, temprature);
+> c
+"Hey there, welcome to Dallas, the time is 4:49:54 AM, and the temprature is  1,111.423"
+> 

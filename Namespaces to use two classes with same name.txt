@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace schoolLibrary
+{
+    class school
+    {
+        string SchoolName;
+        string SchoolAdderess;
+        string SchoolCity;
+        string SchoolZip;
+        string SchoolNumber;
+        Elementary.Volume volume;
+        HighSchool.Volume volume2;
+
+    }
+}
+
+Namespace is schoolLibrary, if we have other folders with same class names, we can import or use their namespaces in current.
+namespaces make sure that classes with same name dont collide, generally in vs namespaces are automatically created as they
+are used in program but can be explicitly writted as well.

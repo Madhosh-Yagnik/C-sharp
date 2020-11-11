@@ -1,0 +1,195 @@
+Parameter: This method accept two parameters “startIndex” and length. First parameter will specify the starting position of the substring which has to be retrieve and second parameter will specify the length of the substring
+
+
+
+madhosh@madhosh-HP-Pavilion-Laptop-15-cc1xx:~$ csharp
+Mono C# Shell, type "help;" for help
+
+Enter statements below.
+csharp> var testString = " abcdef  " 
+csharp> testString.Trim()
+"abcdef"                              
+csharp> testString.TrimEnd            
+(1,13): error CS0428: Cannot convert method group `TrimEnd' to non-delegate type `object'. Consider using parentheses to invoke the method
+csharp> testString.TrimEnd()          
+" abcdef"                             
+csharp> testString.TrimStart()
+"abcdef  "
+csharp> testString.ToUpper()
+" ABCDEF  "                            
+csharp> testString.ToLower()           
+" abcdef  "                                                                     csharp> var password = "p@ssword"                                               
+csharp> var password = "p@sswOrd" 
+csharp> password.ToLower()                                                      "p@ssword"                                                                      csharp> password.ToUpper()                                                      "P@SSWORD"                                                                      csharp> var dickens = "It was the best times, it was the word times"            
+csharp> dickens.Substring()                                                     (1,10): error CS1501: No overload for method `Substring' takes `0' arguments    /usr/lib/mono/4.5/mscorlib.dll (Location of the symbol related to previous error)                                                                               csharp> dickens.Substring                                                       
+(1,10): error CS0428: Cannot convert method group `Substring' to non-delegate type `object'. Consider using parentheses to invoke the method
+csharp> dickens.Substring(4, 8)
+"as the b"
+csharp> dickens.Substring(4, 9) 
+"as the be"
+csharp> dickens.Substring(4, 7) 
+"as the "
+csharp>  
+
+
+Enter statements below.
+csharp> var testString = " abcdef  " 
+csharp> testString.Trim()
+"abcdef"                              
+csharp> testString.TrimEnd            
+(1,13): error CS0428: Cannot convert method group `TrimEnd' to non-delegate type `object'. Consider using parentheses to invoke the method
+csharp> testString.TrimEnd()          
+" abcdef"                             
+csharp> testString.TrimStart()
+"abcdef  "
+csharp> testString.ToUpper()
+" ABCDEF  "                            
+csharp> testString.ToLower()           
+" abcdef  "                                                                     csharp> var password = "p@ssword"                                               
+csharp> var password = "p@sswOrd" 
+csharp> password.ToLower()                                                      "p@ssword"                                                                      csharp> password.ToUpper()                                                      "P@SSWORD"                                                                      csharp> var dickens = "It was the best times, it was the word times"            
+csharp> dickens.Substring()                                                     (1,10): error CS1501: No overload for method `Substring' takes `0' arguments    /usr/lib/mono/4.5/mscorlib.dll (Location of the symbol related to previous error)                                                                               csharp> dickens.Substring                                                       
+(1,10): error CS0428: Cannot convert method group `Substring' to non-delegate type `object'. Consider using parentheses to invoke the method
+csharp> dickens.Substring(4, 8)
+"as the b"
+csharp> dickens.Substring(4, 9) 
+"as the be"
+csharp> dickens.Substring(4, 7) 
+"as the "
+csharp> dickens.Substring(6, 9) 
+" the best"
+csharp> var dickens = "It was the best times, it was the worst times"           csharp> dickens.Substring(16,12)                                                "times, it wa"                                                                  csharp> dickens.Substring(16,13)                                                "times, it was"                                                                 csharp> dickens.Substring(16,12)                                                
+"times, it wa"
+csharp>  ar dickens = "It was the best times,it was the worst times"   
+csharp> dickens.Substring(16, 11)                                               "times,it wa"                                                                   csharp> dickens.Substring(7, 13)                                                "the best time"                                                                 csharp> 
+
+
+//
+
+Enter statements below.
+csharp> var challenge = "  Text processing in C# is really great!  " 
+csharp> challenge.ToUpper()                                                     "  TEXT PROCESSING IN C# IS REALLY GREAT!  "                                    csharp> challenge.Trim()                                                        "Text processing in C# is really great!"                                        csharp> challenge.ToUpper()                                                     "  TEXT PROCESSING IN C# IS REALLY GREAT!  "                                    csharp> var a=challenge.Trim()                                                  csharp> a                                                                       "Text processing in C# is really great!"                                        csharp> a.ToUpper()                                                             "TEXT PROCESSING IN C# IS REALLY GREAT!"                                        csharp> var b=a.ToUpper()                                                       csharp> b                                                                       "TEXT PROCESSING IN C# IS REALLY GREAT!"                                        csharp> b.Substring(24)                                                         " REALLY GREAT!"                                                                csharp> b                                                                       "TEXT PROCESSING IN C# IS REALLY GREAT!"                                        csharp> b.Substring                                                             (1,4): error CS0428: Cannot convert method group `Substring' to non-delegate type `object'. Consider using parentheses to invoke the method                     csharp> b.Substring(24)                                                         " REALLY GREAT!"                                                                csharp> b.Substring(24,11)                                                      " REALLY GRE"                                                                   
+csharp> b.Substring(24,12) 
+" REALLY GREA"
+csharp> b.Substring(24,13) 
+" REALLY GREAT"
+csharp> 
+
+
+csharp> dfdf.Length                                                             13                                                                              csharp> dfdf.Length-1                                                           12                                                                              csharp> dfdf.Substring(3)                                                       "sisastring"                                                                    csharp> dfdf.Substring(8)                                                       "tring"                                                                         csharp> dfdf.Substring)                                                         
+(1,15): error CS1525: Unexpected symbol `)', expecting `;'
+csharp> dfdf.Substring(dfdf.Length-1)                                           "g"                                                                             csharp> dfdf.Substring(dfdf.Length-0)                                           ""                                                                              csharp> dfdf.Substring(dfdf.Length-9)                                           "isastring"                                                                     csharp> dfdf.Substring(4,dfdf.Length-9)                                         
+"isas"
+csharp> dfdf.Substring(5,dfdf.Length-5) 
+"sastring"
+csharp> dfdf.Substring(8,dfdf.Length-5) 
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string.
+Parameter name: length
+  at System.String.Substring (System.Int32 startIndex, System.Int32 length) [0x00058] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+  at <InteractiveExpressionClass>.Host (System.Object& $retval) [0x00011] in <515033940c8a4bbbb4822c275e74c058>:0 
+  at Mono.CSharp.Evaluator.Evaluate (System.String input, System.Object& result, System.Boolean& result_set) [0x0003e] in <c0da9df118a044b29eac06e34d9de396>:0 
+  at Mono.CSharpShell.Evaluate (System.String input) [0x00000] in <445efc3aa14a4c44bc4de07e0f68cd4d>:0 
+csharp> dfdf.Substring(8,dfdf.Length-3) 
+System.ArgumentOutOfRangeException: Index and length must refer to a location within the string.
+Parameter name: length
+  at System.String.Substring (System.Int32 startIndex, System.Int32 length) [0x00058] in <12b418a7818c4ca0893feeaaf67f1e7f>:0 
+  at <InteractiveExpressionClass>.Host (System.Object& $retval) [0x00011] in <6b7828ffb11f46dc8bc71b64ab6b5529>:0 
+  at Mono.CSharp.Evaluator.Evaluate (System.String input, System.Object& result, System.Boolean& result_set) [0x0003e] in <c0da9df118a044b29eac06e34d9de396>:0 
+  at Mono.CSharpShell.Evaluate (System.String input) [0x00000] in <445efc3aa14a4c44bc4de07e0f68cd4d>:0 
+csharp> dfdf.Substring(8,dfdf.Length-8) 
+"tring"
+csharp> dfdf.Substring(dfdf.Length-8)   
+"sastring"
+csharp> dfdf.Substring(2,dfdf.Length-8)
+"isisa"
+csharp> dfdf
+"thisisastring"
+csharp>  
+ 
+//Understood issue
+csharp> challenge.ToUpper().Trim().Substring(24).Trim()                                              "REALLY GREAT!"                                                                                      csharp> challenge.ToUpper().Trim().Substring(24,12).Trim()                                           "REALLY GREA"                                                                                        csharp> challenge.ToUpper().Trim().Substring(24,1).Trim()                                            ""                                                                                                   csharp> challenge.ToUpper().Trim().Substring(24,11).Trim()                                           "REALLY GRE"                                                                                         csharp> challenge.ToUpper().Trim().Substring(24,13).Trim()                                           
+"REALLY GREAT"
+csharp> challenge.ToUpper().Trim().Substring(24,challenge.Trim().Length-25).Trim()                   "REALLY GREAT"                                                                                       csharp> challenge                                                                                    "  Text processing in C# us really great!  "                                                         csharp> challenge.Trim().Substring(5, challenge.Trim().Length-24)                                    "processing in "                                                                                     csharp> challenge.Trim().Substring(5, challenge.Trim().Length-24).ToUpper().Trim()                   "PROCESSING IN"                                                                                      csharp> challenge                                                                                    "  Text processing in C# us really great!  "                                                         csharp> challenge.Trim().Length                                                                      38                                                                                                   csharp> challenge.Trim().Substring(20)                                                               "# us really great!"                                                                                 csharp> challenge.Trim().Substring(18)                                                               " C# us really great!"                                                                               csharp> challenge.Trim().Substring(18).Trim()                                                        "C# us really great!"                                                                                csharp> challenge.Trim().Substring(19, challenge.Trim().Length-35).Trim()                            "C#"                                                                                                 csharp>
+<<<<<<< HEAD
+
+
+
+/Working stringbuilder/
+> var sb = new StringBuilder()
+.     sb.Append("It was");
+(1,29): error CS1002: ; expected
+> var sb = new StringBuilder();
+. sb.Append("It was");
+> sb
+[It was]
+> var sb = new StringBuilder();
+. sb.Append("It was the best of times, It was the worst of times");
+> sb.Append("It was age of wisdom");
+> sb.Append("It was age of foolishness");
+> sb
+[It was the best of times, It was the worst of timesIt was age of wisdomIt was age of foolishness]
+> sb.ToString()
+"It was the best of times, It was the worst of timesIt was age of wisdomIt was age of foolishness"
+
+
+> var sb = new StringBuilder()
+.     sb.Append("It was");
+(1,29): error CS1002: ; expected
+> var sb = new StringBuilder();
+. sb.Append("It was");
+> sb
+[It was]
+> var sb = new StringBuilder();
+. sb.Append("It was the best of times, It was the worst of times");
+> sb.Append("It was age of wisdom");
+> sb.Append("It was age of foolishness");
+> sb
+[It was the best of times, It was the worst of timesIt was age of wisdomIt was age of foolishness]
+> sb.ToString()
+"It was the best of times, It was the worst of timesIt was age of wisdomIt was age of foolishness"
+> sb = new StringBuilder();
+> sb.Append("It was best of times, It was worst of times");
+> sb.ToString();
+> sb
+[It was best of times, It was worst of times]
+> var sb = new StringBuilder("it was best of times, it was worst of times");
+> sb.AppendLine("It was age of foolishness");
+> sb.AppendLine("it was age of wisdom");
+> sb.ToString()
+"it was best of times, it was worst of timesIt was age of foolishness\r\nit was age of wisdom\r\n"
+> sb = new StringBuilder();
+> sb.AppendLine("It was best of times, it was worst of times");
+> 
+> sb.AppendLine("it was age of wisdom");
+> 
+. sb.AppendLine("it was age of foolishness");
+> sb.ToString()
+"It was best of times, it was worst of times\r\nit was age of wisdom\r\nit was age of foolishness\r\n"
+> 
+
+> var city = "Dallas";
+> var temprature = 103.4f;
+> var currentDt = DateTime.Now;
+> string.Format("Welcome to {0}. The time is {1}. The temprature is {2}", city, currentDt, temprature);
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. string.Format("Welcome to {0}. The time is {1}. The temprature is {2}", city, currentDt, temprature);
+> var
+(1,1): error CS0103: The name 'var' does not exist in the current context
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. var ss =string.Format("Welcome to {0}. The time is {1}. The temprature is {2}", city, currentDt, temprature);
+> ss
+"Welcome to Dallas. The time is 11/4/2020 4:25:20 AM. The temprature is 103.4"
+> var city = "Dallas";
+. var temprature = 103.4f;
+. var currentDt = DateTime.Now;
+. var ss =string.Format("Welcome to {0}. The time is {1:t}. The temprature is {2}", city, currentDt, temprature);
+> ss
+"Welcome to Dallas. The time is 4:27 AM. The temprature is 103.4"
+> 
+> 
+=======
+>>>>>>> main

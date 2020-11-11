@@ -1,0 +1,13 @@
+/home/madhosh/C_hash_Code/practiceCode/bin/Debug/netcoreapp3.1/practiceCode
+/home/madhosh/C_hash_Code/practiceCode/bin/Debug/netcoreapp3.1/practiceCode.deps.json
+/home/madhosh/C_hash_Code/practiceCode/bin/Debug/netcoreapp3.1/practiceCode.runtimeconfig.json
+/home/madhosh/C_hash_Code/practiceCode/bin/Debug/netcoreapp3.1/practiceCode.runtimeconfig.dev.json
+/home/madhosh/C_hash_Code/practiceCode/bin/Debug/netcoreapp3.1/practiceCode.dll
+/home/madhosh/C_hash_Code/practiceCode/bin/Debug/netcoreapp3.1/practiceCode.pdb
+/home/madhosh/C_hash_Code/practiceCode/obj/Debug/netcoreapp3.1/practiceCode.csprojAssemblyReference.cache
+/home/madhosh/C_hash_Code/practiceCode/obj/Debug/netcoreapp3.1/practiceCode.AssemblyInfoInputs.cache
+/home/madhosh/C_hash_Code/practiceCode/obj/Debug/netcoreapp3.1/practiceCode.AssemblyInfo.cs
+/home/madhosh/C_hash_Code/practiceCode/obj/Debug/netcoreapp3.1/practiceCode.csproj.CoreCompileInputs.cache
+/home/madhosh/C_hash_Code/practiceCode/obj/Debug/netcoreapp3.1/practiceCode.dll
+/home/madhosh/C_hash_Code/practiceCode/obj/Debug/netcoreapp3.1/practiceCode.pdb
+/home/madhosh/C_hash_Code/practiceCode/obj/Debug/netcoreapp3.1/practiceCode.genruntimeconfig.cache

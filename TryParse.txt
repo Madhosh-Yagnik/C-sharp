@@ -1,0 +1,22 @@
+> int test;
+> var result = int.TryParse("34534234", out test);
+> result
+true
+> int test;
+. var result = int.TryParse("3,4534234", out test);
+> result
+false
+> int test;
+. var result = int.TryParse("34534234", out test);
+> result
+true
+> test
+34534234
+
+/all data types have parsing tech/
+
+/shitcode/
+
+> enum weekDays { monday, tuesday, wednesday, thursday, friday, saturday, sunday};
+> var someDay = weekDays.wednesday;
+> someDay

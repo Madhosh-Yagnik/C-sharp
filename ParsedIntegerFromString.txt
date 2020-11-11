@@ -1,0 +1,13 @@
+> var test = "454,23";
+> int.Parse(test.Replace((",", "")))
+(1,16): error CS1501: No overload for method 'Replace' takes 1 arguments
+> int.Parse(test.Replace((",", "")));
+(1,16): error CS1501: No overload for method 'Replace' takes 1 arguments
+> int.Parse(test.Replace(",", ""));
+> test
+"454,23"
+> var parsedVar = int.Parse(test.Replace((",", "")));
+(1,32): error CS1501: No overload for method 'Replace' takes 1 arguments
+> var parsedVar = int.Parse(test.Replace(",", ""));
+> parsedVar
+45423
